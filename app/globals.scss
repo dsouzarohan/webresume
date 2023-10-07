@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary-font: 'Pixelify Sans', sans-serif;
+$secondary-font: 'IBM Plex Mono', monospace;
+
+$primary-bg-color: #2c2e31;
+
+$primary-text-color: white;
+$secondary-text-color: #f08c00;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.main-cont {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  position: relative;
+}
+
+.noise-bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+  0% { transform: translate(0,0) }
+  10% { transform: translate(-5%,-5%) }
+  20% { transform: translate(-10%,5%) }
+  30% { transform: translate(5%,-10%) }
+  40% { transform: translate(-5%,15%) }
+  50% { transform: translate(-10%,5%) }
+  60% { transform: translate(15%,0) }
+  70% { transform: translate(0,10%) }
+  80% { transform: translate(-15%,0) }
+  90% { transform: translate(10%,5%) }
+  100% { transform: translate(5%,0) }
+}
+
+.intro {
+
+  h1 {
+    font-family: $secondary-font;
+    font-size: 36px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  .name {
+    font-family: $primary-font;
+    font-size: 96px;
+    color: $secondary-text-color;
+    text-shadow: -4px 3px 0 #393a3c, -14px 7px 0 #0a0e27;
+  }
+
+  .title {
+    font-family: $secondary-font;
+    font-size: 24px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+}
+
+// Custom Scrollbar
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f08c00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9500;
+}
