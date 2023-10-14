@@ -1,0 +1,7 @@
+@use "../../variables.scss" as *;
+
+.mainCont {
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+    position: relative;
+}

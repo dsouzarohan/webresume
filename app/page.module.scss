@@ -1,0 +1,35 @@
+@use "./variables.scss" as *;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 3s;
+  }
+  
+  .intro {
+    
+    border-right: $secondary-text-color 10px solid; 
+  
+    .name {
+      font-family: $primary-font;
+      font-size: 96px;
+      color: $secondary-text-color;
+      overflow: hidden;
+      white-space: nowrap;
+      text-shadow: -4px 3px 0 #393a3c, -14px 7px 0 #0a0e27;
+      animation: fadeIn 3s;
+    }
+  
+    .title {
+      font-family: $secondary-font;
+      font-size: 24px;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+}
