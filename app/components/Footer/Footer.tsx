@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faSpotify, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faSpotify, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import styles from './Footer.module.scss'
 import { faCode, faHeart } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,15 +11,19 @@ const iconLinks = [
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com/in/yourusername/"
+    url: "https://www.linkedin.com/in/rohandsouza23/"
+  },
+  {
+    icon: faXTwitter,
+    url: "https://twitter.com/rohandsouza23"
   },
   {
     icon: faSpotify,
-    url: "https://open.spotify.com/user/yourusername"
+    url: "https://open.spotify.com/user/31lggrydorann4n4kkyrfrnuf4nu"
   },
   {
     icon: faInstagram,
-    url: "https://www.instagram.com/yourusername/"
+    url: "https://www.instagram.com/rockandroh/"
   }
 ];
 

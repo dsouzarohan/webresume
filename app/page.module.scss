@@ -19,7 +19,6 @@
   
     .name {
       font-family: $primary-font;
-      font-size: 96px;
       color: $secondary-text-color;
       overflow: hidden;
       white-space: nowrap;
@@ -29,7 +28,6 @@
   
     .title {
       font-family: $secondary-font;
-      font-size: 24px;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     }
 }

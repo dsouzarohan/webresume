@@ -6,9 +6,9 @@ export default function Home() {
     <RouteLayout>
       <div className="cont w-full h-full z-20">
         <div className={styles.intro}>
-          <h1 className={styles.title}>Hey there,</h1>
-          <p className={styles.name}>I'm Rohan.</p>
-          <h4 className={styles.title}>a Software Engineer.</h4>
+          <h1 className={`text-base md:text-2xl ${styles.title}`}>Hey there,</h1>
+          <p className={`text-5xl md:text-8xl ${styles.name}`}>I'm Rohan.</p>
+          <h4 className={`text-base md:text-2xl ${styles.title}`}>a Software Engineer.</h4>
         </div>
       </div>
     </RouteLayout>
