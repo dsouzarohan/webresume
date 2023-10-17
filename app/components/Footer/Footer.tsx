@@ -7,7 +7,7 @@ import { faCode, faHeart } from '@fortawesome/free-solid-svg-icons';
 const iconLinks = [
   {
     icon: faGithub,
-    url: "https://github.com/yourusername"
+    url: "https://github.com/dsouzarohan"
   },
   {
     icon: faLinkedin,

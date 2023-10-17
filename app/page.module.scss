@@ -30,4 +30,11 @@
       font-family: $secondary-font;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     }
-}
+  }
+
+  .desc {
+    background-color: #1E1E1E;
+    opacity: 0.8;
+    border-left: $secondary-text-color 10px solid; 
+    font-family: $secondary-font;
+  }
