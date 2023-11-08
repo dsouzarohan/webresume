@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "clean": "rm -rf .next",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,9 +14,11 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "next": "13.5.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "mongodb": "^6.2.0",
+    "mongoose": "^7.6.3",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -23,7 +26,7 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4",
+    "eslint-config-next": "^14.0.0",
     "postcss": "^8",
     "sass": "^1.69.0",
     "tailwindcss": "^3",

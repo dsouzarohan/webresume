@@ -1,6 +1,16 @@
-$primary-font: 'Pixelify Sans', sans-serif;
-$secondary-font: 'IBM Plex Mono', monospace;
-$primary-bg-color: #2c2e31;
-$primary-text-color: white;
-$secondary-text-color: #f08c00;
-$secondary-bg-color: #1E1E1E
+/* 
+    Variables to be used in custom CSS classes
+    To be synced with tailwind.config.ts
+*/
+
+// Fonts
+$pixel: 'Pixelify Sans', sans-serif;
+$ibm: 'IBM Plex Mono', monospace;
+
+// Colors
+$jet: #2c2e31;
+$white: white;
+$carrot: #f08c00;
+$eerie: #1E1E1E;
+$onyx: #393a3c;
+$space-cadet: #242e42;

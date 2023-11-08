@@ -1,8 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faSpotify, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import styles from './Footer.module.scss'
-import { faCode, faHeart } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 const iconLinks = [
   {
@@ -29,18 +28,21 @@ const iconLinks = [
 
 const Footer = () => {
   return (
-    <div className="footer fixed inset-x-0 bottom-0 flex flex-col justify-center content-center gap-2 w-100 p-10 z-20">
-      {/* <p className="foot-note flex justify-center">
-        <FontAwesomeIcon icon={faCode} height={20}></FontAwesomeIcon>
-        <span>&nbsp;with&nbsp;</span>
-        <FontAwesomeIcon icon={faHeart} height={20}></FontAwesomeIcon>
-      </p> */}
+    <div className="footer absolute inset-x-0 bottom-0 flex flex-col justify-center items-center gap-2 w-100 p-10 z-20 bg-gradient-to-b from-5% from-transparent to-eerie">
       <div className='flex justify-center gap-2'>
         {iconLinks.map((link, index) => (
           <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon className={styles.platIcon} icon={link.icon} height={20} />
+            {/* TODO: issue with the height for the footer icons, resizes automatically on some pages */}
+            <FontAwesomeIcon className="hover:text-carrot" icon={link.icon} height={20} size='lg' />
           </a>
         ))}
+      </div>
+      {/* <div className="bg-carrot h-px w-2/6"></div> */}
+      <div className="flex justify-center gap-4 font-ibm text-xs md:text-sm">
+        <Link className="hover:text-carrot" href="/">Home</Link>
+        <Link className="hover:text-carrot" href="/about-me">About Me</Link>
+        <Link className="hover:text-carrot" href="/profile">Profile</Link>
+        <Link className="hover:text-carrot" href="/contact">Contact</Link>
       </div>
     </div>
   )

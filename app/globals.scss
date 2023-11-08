@@ -36,6 +36,8 @@
   visibility: visible;
 }
 
+// Custom keyframes
+
 @keyframes bg-animation {
   0% { transform: translate(0,0) }
   10% { transform: translate(-5%,-5%) }
@@ -48,6 +50,25 @@
   80% { transform: translate(-15%,0) }
   90% { transform: translate(10%,5%) }
   100% { transform: translate(5%,0) }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+// Custom font rules
+
+.pixelify {
+  font-family: $pixel;
+  color: $carrot;
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: -4px 3px 0 #393a3c, -14px 7px 0 #0a0e27;
 }
 
 // Custom Scrollbar
